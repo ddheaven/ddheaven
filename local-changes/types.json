@@ -1,0 +1,9 @@
+{
+    "novice":   {"name":"Novice",   "startmap":"Kobra 2",            "rate":0.2},
+    "moderate": {"name":"Moderate", "startmap":"Kopell",             "rate":0.2},
+    "brutal":   {"name":"Brutal",   "startmap":"Naufrage",           "rate":0.2},
+    "ddmax":    {"name":"DDmaX",    "startmap":"Lost Story",         "rate":0.1},
+    "oldschool":{"name":"Oldschool","startmap":"AiP-Gores",          "rate":0.1},
+    "solo":     {"name":"Solo",     "startmap":"After the Cataclysm","rate":0.1},
+    "race":     {"name":"Race",     "startmap":"run_pokemon",        "rate":0.1}
+}
