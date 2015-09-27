@@ -2,6 +2,7 @@
 
 # This file is called when the git repo updated.
 
+(
 cd /home/teeworlds/ddheaven
 
 git add local-changes/local_vars.py
@@ -15,6 +16,7 @@ git stash pop
 ./local-changes/flexnames.py
 ./local-changes/ddrace_config.py
 ./local-changes/mysql_config.py
+)
 
 
 copy () {
@@ -50,7 +52,7 @@ while read -r line; do
     fi
 done
 
-
+(
 cd /home/teeworlds/servers
-
 ./local-changes/update-servers.sh
+)
