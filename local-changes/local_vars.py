@@ -4,10 +4,10 @@ RCONMODPASSWORD = "92uir032ir2309r"
 # The teeworlds server will try to connect to the SQL server
 # localhost:3306 using the SQL user teeworlds. You can change
 # the password the server will use for the connection here.
-SQLPASSWORD = ""
+SQLPASSWORD = "239r3u2993k20"
 
 # For example GER, don't change this since its used also for SQL!
-SRVCOUNTRY = ""
+SRVCOUNTRY = "UNKNOWN"
 
 # The number of teeworlds servers you want to host for DDHeaven.
 # You can start the servers later by executing ./run-all.sh

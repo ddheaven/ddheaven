@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd /home/teeworlds/servers
+
 handle_term() {
   kill "$child" 2>/dev/null
   exit

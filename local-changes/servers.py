@@ -11,13 +11,17 @@ with open("local-changes/types.json") as typesfile:
 with open("local-changes/config.template") as templatefile:
     template = templatefile.read().strip()
 
+if not os.path.exists("servers"):
+    os.mkdir("servers")
 for filename in os.listdir("servers"):
     os.remove("servers/"+filename)
 
 typ_index = 0
 rate = types.values()[0]["rate"]
+ports = []
 for index in range(SRVCOUNT):
     port = str(SRVSTARTPORT + index)
+    ports.append(port)
     typ, typinfo = types.items()[typ_index]
     if (index+1) / rate >= SRVCOUNT:
         typ_index += 1
@@ -27,3 +31,6 @@ for index in range(SRVCOUNT):
     config = config.replace("SRVSTARTMAP", typinfo["startmap"])
     with open("servers/"+port+".cfg", "w") as configfile:
         configfile.write(config)
+
+with open("all-servers", "w") as serverfile:
+    serverfile.write(" ".join(ports))

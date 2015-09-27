@@ -12,6 +12,6 @@ with open("local-changes/flexname.template") as templatefile:
 template = template.replace("SRVCOUNTRY", SRVCOUNTRY)
 
 for typ, info in types.items():
-    flexname = flexname.replace("SRVTYPENAME", info["name"])
+    flexname = template.replace("SRVTYPENAME", info["name"])
     with open("types/"+typ+"/flexname.cfg", "w") as flexnamefile:
         flexnamefile.write(flexname)
