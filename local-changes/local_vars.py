@@ -16,3 +16,5 @@ SRVCOUNT = 8
 # If SRVCOUNT is 3 and SRVSTARTPORT is 8303 the ports
 # 8303, 8304 and 8405 are used for the servers.
 SRVSTARTPORT = 8303
+
+# This line has to stay the last line of this file to keep merging working.
